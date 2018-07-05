@@ -1,0 +1,226 @@
+
+
+  body { //using the body as a wrapper
+  margin :0 auto;
+  width:960px;
+  background: white;
+  overflow-y: scroll;
+  font-family: 'Lora', serif;
+  border-left-style: solid;
+  border-left-width: 5px;
+  border-left-color: #0992ef;
+}
+//this makes sure, each main section is the same size and also each div has a class of section so that the left blue border line extends all the way down the page.
+.section {
+  height: 25%;
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+  
+}
+#navigation { 
+  list-style-type: none;//gets rid of bullets
+  margin: 0;
+  padding: 20px;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.nav {
+  float: right;
+    /* Add a gray right border to all list items, except the last item (last-child) */
+    // border-right: 1px solid #bbb;
+  position: sticky;
+}
+  
+//   li:last-child {
+//     border-right: none;
+// }
+
+.nav {
+    display: block;
+    color: #e8edf7;
+    text-align: center;
+    padding: 0px 10px 0px 10px;
+    text-decoration: none;
+}
+.title {
+  border-right: hidden;
+  color: #e8edf7;
+  -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+/* Chrome, Safari, Opera */
+  @-webkit-keyframes mymove {//animation effect of a text shadow
+    80% {text-shadow: 10px 20px 30px white;}
+  }
+}
+
+#cost {
+  font-family: Lora, sans serif;
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+
+/* Change the link color to #111 (black) on hover */
+.nav:hover {
+    background-color: #6cbff7;
+}
+
+.welcome {
+  background: #dee1e2;
+  height: 40px;
+  color: #ffd217;
+  text-shadow: 10px 10px 0 #5ac7ff, 20px 20px 0 #ffd217, 30px 30px 0 #5ac7ff;
+}
+
+#intro {
+  padding-top: 30px;
+  font-family: 'Wendy One', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  line-height: 1.6;  
+}
+//the next three classes give the images in the sample section a text overlay on hover
+.thumb {
+  position: relative;
+  height: 200px;
+  width: 250px;
+   border: solid 1px #CCC;
+    -moz-box-shadow: 3px 3px 5px #999;
+    -webkit-box-shadow: 3px 3px 5px #999;
+        box-shadow: 3px 3px 5px #999;
+  
+}
+.text {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 30px;
+  bottom: 0;
+  color: white;
+  font: Lora, sans serif;
+  font-size: 50px;
+  font-style: bold;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+
+.thumb:hover .text{
+ opacity: 1;
+}
+
+.profile {
+    border: solid 1px #CCC;
+    -moz-box-shadow: 3px 3px 5px #999;
+    -webkit-box-shadow: 3px 3px 5px #999;
+    box-shadow: 3px 3px 5px #999;
+    border-radius: 50%;
+}
+form {
+  /*just to center the contact form on page*/
+  margin: 0 auto;
+  width: 600px;
+  /*to see the outline of form*/
+  color: #edeff2;
+  padding: 1em;
+  border: 5px double gray;
+  border-radius: 2em;
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1891105/apple-desk-digital-7358.jpg");
+  background-color: #ccd6e8;
+}
+form div + div {// this separates the input boxes from each other
+  margin-top: 1em;
+}
+label {
+  /*all labels have the same size and are aligned*/
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+input, textarea {
+  /*all text fields have same font box size and box color*/
+  font: 1em sans-serif;
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px solid #000;
+  background-color: #e2dfd9;
+}
+
+input:focus, textarea:focus {
+  /*highlight when active*/
+  border-color: coral;
+}
+input:hover, textarea:hover{
+  background-color: coral;
+}
+
+textarea {
+  /*to align multiline text fields*/
+  vertical-align: top;
+  height: 5em;
+}
+
+.button {
+  /*to align button with text field*/
+  padding-left: 90px;
+}
+
+button:hover {
+  background-color: yellow;
+}
+button {/*extra margin represents about the same space between labels and their text fields*/
+  margin-left: 5em;
+}
+
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  height: 30px;
+  margin-bottom: 30px;
+}
+
+td {
+  text-align: center;
+}
+//styling for the back up button
+.goTop {
+ background: none;
+ margin: 0;
+ position: fixed;
+ bottom: 0;
+ right: 0;
+ width: 50px;
+ height: 50px;
+ z-index: 100;
+ display: none;
+ text-decoration: none;
+ color: #e6ebf4;
+ background-color: #4a6fbf; 
+}
+  
+.goTop i {
+  font-size: 60px;
+}
+
+#footer {
+  font-family: Lora, sans serif;
+  color: #474c56;
+  font-size: 20px;
+  
+}
+
+.foot a {
+  font-family: Lora, sans serif;
+  color: #474c56;
+  font-size: 20px;
+  text-decoration: none;
+}
+.foot {
+   list-style-type: none;
+}
+
